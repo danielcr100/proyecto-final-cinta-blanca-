@@ -64,13 +64,13 @@
     <div class="container">
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4 animated infinite rubberBand" src="./IMG/LogoMakr_945x5U.png" alt="">
-            <h2>Pagina de Servicio</h2>
+            <h2>Pagina para registrarse como socio</h2>
         </div>
 
         <div class="row center d-flex justify-content-center">
 
             <div class="col-md-8 order-md-1">
-                <h4 class="mb-3">Formulario de servicio</h4>
+                <h4 class="mb-3">Formulario de Socio</h4>
                 <form class="needs-validation" novalidate="">
                     <div class="row">
                         <div class="col-md-6 mb-3">
@@ -103,7 +103,10 @@
                             Please enter a valid email address for service updates.
                         </div>
                     </div>
-
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputPassword2" class="sr-only">Digite un Password</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
                     <div class="mb-3">
                         <label for="address">Direccion</label>
                         <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
@@ -154,64 +157,37 @@
 
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="save-info">
-                        <label class="custom-control-label" for="save-info">¿¿Guardar la informacion para proximos
-                            servicios??</label>
+                        <label class="custom-control-label" for="save-info">Aceptas nuestros terminos y
+                            condiciones</label>
                     </div>
                     <hr class="mb-4">
-                    <h4 class="mb-3">Metodo de Pago</h4>
+                    <h4 class="mb-3">Informacion de referencia</h4>
 
                     <div class="d-block my-3">
                         <div class="custom-control custom-radio">
                             <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked=""
                                 required="">
-                            <label class="custom-control-label" for="credit">Tarjeta de credito</label>
+                            <label class="custom-control-label" for="credit">Socio de negocio</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
                                 required="">
-                            <label class="custom-control-label" for="debit">Tarjeta de debito</label>
+                            <label class="custom-control-label" for="debit">Proveedor</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input"
                                 required="">
-                            <label class="custom-control-label" for="paypal">PayPal</label>
+                            <label class="custom-control-label" for="paypal">Carreras en la empresa</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="cc-name">Nombre de la tarjeta</label>
-                            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                            <small class="text-muted">Nombre completo que se encuentra en la tarjeta</small>
-                            <div class="invalid-feedback">
-                                Name on card is required
-                            </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Cargue su CV</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="cc-number">Numero de tarjeta</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Credit card number is required
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 mb-3">
-                            <label for="cc-expiration">Fecha de expiracion</label>
-                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Expiration date required
-                            </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="cc-cvv">CVV</label>
-                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                            <div class="invalid-feedback">
-                                Security code required
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                     <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">PAGAR</button>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Registrarse</button>
                 </form>
             </div>
         </div>
